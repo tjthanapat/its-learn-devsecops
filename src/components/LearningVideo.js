@@ -12,12 +12,12 @@ const LearningVideo = () => {
             <p className="font-medium text-6xl text-white">ทำความรู้จัก</p>
             <p className="mt-2 text-3xl text-indigo-800">กับ DevSecOps</p>
           </h2>
-          <p className="mt-10 text-lg text-indigo-200">
-            เป็นการทำงานร่วมกันในการพัฒนาซอฟต์แวร์ ประกอบไปด้วย 3 ส่วนหลัก
-            ได้แก่ development, operations และ security
+          <p className="mt-10 text-lg text-indigo-100">
+            การทำงานร่วมกันในการพัฒนาซอฟต์แวร์ ประกอบไปด้วย 3 ส่วนหลัก ได้แก่
+            development, operations และ security
             โดยจะมีแนวคิดและกระบวนหลักเหมือนแนวคิดของ DevOps
-            แต่ต่างกันตรงที่แนวคิดนี้เพิ่มในส่วนของตรวจสอบด้านความมั่นคงปลอดภัยเข้ามาในทุกส่วนของ
-            วงจรของ DevOps
+            แต่ต่างกันตรงที่แนวคิดนี้เพิ่มในส่วนของตรวจสอบด้านความมั่นคงปลอดภัยเข้ามาในทุกส่วนของวงจรของ
+            DevOps
           </p>
         </div>
         <div id="learning-vdo-video" className="w-full ">
