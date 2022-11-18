@@ -3,6 +3,8 @@ import './style.css';
 
 import Hero from './components/Hero';
 import LearningVideo from './components/LearningVideo';
+import MainIdea from './components/MainIdea';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -10,8 +12,9 @@ const App = () => {
       <Hero />
       <div id="content" className="min-h-screen bg-indigo-100">
         <LearningVideo />
+        <MainIdea/>
       </div>
-      <footer>Learn DevSecOps</footer>
+      <Footer/>
     </>
   );
 };
