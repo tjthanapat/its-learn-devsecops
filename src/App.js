@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import LearningVideo from './components/LearningVideo';
 import MainIdea from './components/MainIdea';
 import Footer from './components/Footer';
+import ShowTools from './components/Tools';
 
 const App = () => {
   return (
@@ -12,9 +13,10 @@ const App = () => {
       <Hero />
       <div id="content" className="min-h-screen bg-indigo-100">
         <LearningVideo />
-        <MainIdea/>
+        <MainIdea />
+        <ShowTools />
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };
