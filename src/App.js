@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './style.css';
 
-function App() {
+import Hero from './components/Hero';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Hero />
+      <div id="content" className="min-h-screen bg-indigo-100">
+        <div className=" max-w-screen-lg mx-auto p-5">
+          <div className="yt-wrapper">
+            <iframe
+              src="https://www.youtube.com/embed/nrhxNNH5lt0"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            />
+          </div>
+        </div>
+      </div>
+      <footer>Learn DevSecOps</footer>
+    </>
   );
-}
+};
 
 export default App;

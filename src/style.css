@@ -1,0 +1,9 @@
+.hero img.characters {
+  min-width: 512px;
+}
+
+.hero-shadow {
+  box-shadow: 0 125px 248px 148px rgb(99, 102, 241, 0.8);
+  -webkit-box-shadow: 0 125px 248px 148px rgb(99, 102, 241, 0.8);
+  -moz-box-shadow: 0 125px 248px 148px rgb(99, 102, 241, 0.8);
+}
