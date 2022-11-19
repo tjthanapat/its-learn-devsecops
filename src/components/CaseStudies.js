@@ -5,7 +5,7 @@ import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 const CaseStudies = () => {
   const [selectedCase, setSelectedCase] = useState('1');
   return (
-    <section className="px-10 pb-24">
+    <section className="px-10 pb-16">
       <div className="mx-auto max-w-screen-lg">
         <h2 className="text-center text-3xl text-indigo-500 mb-3">
           กรณีศึกษาที่น่าสนใจ

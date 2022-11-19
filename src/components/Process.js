@@ -7,16 +7,16 @@ const ProcessCard = (props) => {
         //     <p className="font-mitr text-xl text-indigo-500">{title}</p>
         //     <p>{desc}</p>
         // </div>
-        <li class="relative mb-6 sm:mb-0 list-none">
-            <div class="flex items-center">
-                <div class="flex z-10 justify-center items-center w-8 h-8 bg-indigo-800 rounded-full shrink-0 bg-opacity-100 hover:bg-opacity-50">
-                    <h3 class='text-white'>{num}</h3>
+        <li className="relative mb-6 sm:mb-0 list-none">
+            <div className="flex items-center">
+                <div className="flex z-10 justify-center items-center w-8 h-8 bg-indigo-800 rounded-full shrink-0 bg-opacity-100 hover:bg-opacity-50">
+                    <h3 className='text-white'>{num}</h3>
                 </div>
-                <div class="sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
+                <div className="sm:flex w-full bg-gray-200 h-0.5 dark:bg-gray-700"></div>
             </div>
-            <div class="mt-3 lg:pr-8">
-                <h3 class="text-xl font-semibold text-white">{title}</h3>
-                <p class="text-indigo-100">{desc}</p>
+            <div className="mt-3 lg:pr-8">
+                <h3 className="text-xl font-semibold text-white">{title}</h3>
+                <p className="text-indigo-100">{desc}</p>
             </div>
         </li>
     );

@@ -8,17 +8,19 @@ import Footer from './components/Footer';
 import ShowTools from './components/Tools';
 import Process from './components/Process'
 import CaseStudies from './components/CaseStudies';
+import DevSecOpsQuiz from './components/Quiz';
 
 const App = () => {
   return (
     <>
       <Hero />
-      <div id="content" className="min-h-screen bg-indigo-100">
+      <div id="content" className="bg-indigo-100">
         <LearningVideo />
         <MainIdea/>
         <Process />
         <ShowTools />
         <CaseStudies/>
+      <DevSecOpsQuiz/>
       </div>
       <Footer/>
     </>
