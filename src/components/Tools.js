@@ -4,7 +4,7 @@ const Tools = (props) => {
     const { name, Icon, url } = props;
     return (
         <a href={url} target="_blank" rel="noopener noreferrer">
-            <div className="bg-indigo-200 bg-opacity-50 rounded-2xl p-5 text-center hover:bg-opacity-100 transition duration-500 ease select-none">
+            <div className="bg-indigo-200 bg-opacity-50 rounded-2xl p-5 text-center hover:bg-opacity-100 hover:scale-105 transition duration-500 ease select-none">
                 <img
                     className="h-20 mx-auto"
                     src={Icon}
@@ -19,12 +19,11 @@ const Tools = (props) => {
 
 const ShowTools = () => {
     return (
-        <section className="py-10 px-10 bg-indigo-100 ">
-            <h2 className='text-center align-text-middle text-3xl text-indigo-500 mb-10'>ตัวอย่างเครื่องมือ</h2>
+        <section className="py-20 px-10 bg-indigo-100 ">
+            <h2 className='text-center align-text-middle text-4xl text-indigo-500 mb-7'>ตัวอย่างเครื่องมือ</h2>
             <div className="mx-auto max-w-screen-lg ">
-                <div className="grid grid-cols-3 gap-5">
-                    <div className="grid grid-cols-2 gap-9">
-                        <h2 className='col-span-2 text-center text-2xl text-indigo-500'>DevOps</h2>
+                <div className="sm:col-span-2 grid lg:grid-cols-3 sm:grid-cols-1 gap-5">
+                    <div className="grid grid-cols-2 gap-x-9 gap-y-4">
                         <Tools
                             Icon="/assets/docker.png"
                             name="Docker"
@@ -35,11 +34,12 @@ const ShowTools = () => {
                             name="Jenkins"
                             url="https://www.jenkins.io/"
                         />
+                        <h2 className='col-span-2 text-center text-2xl text-indigo-500 '>DevOps</h2>
                     </div>
-                    <div className="grid grid-cols-2 gap-9">
+                    <div className="lg:grid grid-cols-1 gap-9 content-start">
+
                     </div>
-                    <div className="grid grid-cols-2 gap-9">
-                        <h2 className='col-span-2 text-center text-2xl text-indigo-500'>DevSecOps</h2>
+                    <div className="grid grid-cols-2 gap-x-9 gap-y-4">
                         <Tools
                             Icon="/assets/vault.png"
                             name="Vault"
@@ -50,6 +50,7 @@ const ShowTools = () => {
                             name="Aqua"
                             url="https://www.aquasec.com/"
                         />
+                        <h2 className='col-span-2 text-center text-2xl text-indigo-500'>DevSecOps</h2>
                     </div>
                 </div>
 
