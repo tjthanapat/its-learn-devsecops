@@ -1,16 +1,19 @@
 import React from 'react';
 
 const Tools = (props) => {
-    const { name, Icon } = props;
+    const { name, Icon, url } = props;
     return (
-        <div className="bg-indigo-200 bg-opacity-50 rounded-2xl p-5 text-center hover:bg-opacity-100 transition duration-500 ease select-none">
-            <img
-                className="h-20 mx-auto"
-                src={Icon}
-                alt="DevSecOpsCycle by Dynatrace"
-            />
-            <p className="font-mitr text-xl text-indigo-500">{name}</p>
-        </div>
+        <a href={url} target="_blank" rel="noopener noreferrer">
+            <div className="bg-indigo-200 bg-opacity-50 rounded-2xl p-5 text-center hover:bg-opacity-100 transition duration-500 ease select-none">
+                <img
+                    className="h-20 mx-auto"
+                    src={Icon}
+                    alt="DevSecOpsCycle by Dynatrace"
+                />
+                <p className="font-mitr text-xl text-indigo-500">{name}</p>
+            </div>
+        </a>
+
     );
 };
 
@@ -25,10 +28,12 @@ const ShowTools = () => {
                         <Tools
                             Icon="/assets/docker.png"
                             name="Docker"
+                            url="https://www.docker.com/"
                         />
                         <Tools
                             Icon="/assets/jenkins.png"
                             name="Jenkins"
+                            url="https://www.jenkins.io/"
                         />
                     </div>
                     <div className="grid grid-cols-2 gap-9">
@@ -38,10 +43,12 @@ const ShowTools = () => {
                         <Tools
                             Icon="/assets/vault.png"
                             name="Vault"
+                            url="https://www.vaultproject.io/"
                         />
                         <Tools
                             Icon="/assets/aq.png"
                             name="Aqua"
+                            url="https://www.aquasec.com/"
                         />
                     </div>
                 </div>
