@@ -16,3 +16,10 @@ body {
 h1, h2, .font-mitr {
   font-family: 'Mitr', sans-serif;
 }
+
+ul.list-dashed {
+  list-style-type: none;
+}
+ul.list-dashed > li:before {
+  content: "- ";
+}
