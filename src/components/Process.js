@@ -24,8 +24,12 @@ const ProcessCard = (props) => {
 
 const Process = () => {
     return (
-        <section className="py-24 px-10 bg-indigo-500 ">
-            <h2 className='text-center text-3xl text-white mb-10'>DevSecOps ประกอบไปด้วย 5 ขั้นตอน ที่ทำงานไปพร้อมกับวงจร DevOps </h2>
+        <section className="py-20 px-10 bg-indigo-500 ">
+            <h2>
+                <p className="font-medium text-5xl text-white text-center">การทำงานของ DevSecOps</p>
+                <p className="mt-2 text-3xl text-indigo-800 text-center mb-7">ประกอบไปด้วย 5 ขั้นตอน</p>
+            </h2>
+            {/* <img className="w-fit max-w-xl mx-auto hover:scale-105 transition duration-500 ease select-none mb-7" src="/assets/process.png" alt='test' /> */}
             <div className="mx-auto max-w-screen-lg lg:flex lg:justify-center">
                 <div className="sm:col-span-2 grid lg:grid-cols-5 sm:grid-cols-1 gap-3">
                     <ProcessCard
