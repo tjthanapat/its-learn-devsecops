@@ -16,8 +16,8 @@ const CaseStudies = () => {
             setSelectedCase={setSelectedCase}
           />
         </div>
-        <Case caseStudy={caseStudies[0]} show={selectedCase==='1'}/>
-        <Case caseStudy={caseStudies[1]} show={selectedCase==='2'}/>
+        <Case caseStudy={caseStudies[0]} show={selectedCase === '1'} />
+        <Case caseStudy={caseStudies[1]} show={selectedCase === '2'} />
       </div>
     </section>
   );
@@ -26,7 +26,9 @@ const CaseStudies = () => {
 const ToggleCase = (props) => {
   const { selectedCase, setSelectedCase } = props;
   const handleSelectCase = (event, caseId) => {
-    setSelectedCase(caseId);
+    if (caseId !== null) {
+      setSelectedCase(caseId);
+    }
   };
   return (
     <ToggleButtonGroup
@@ -86,6 +88,17 @@ const caseStudies = [
           อีกทั้งยังเพิ่มความปลอดภัยการจัดเก็บ logging
           ให้ไม่สามารถแก้ไขเปลี่ยนแปลงหรือทำการลบได้ตั้งแต่ต้นจนจบกระบวนการ
         </p>
+        <p>
+          แหล่งที่มา{' '}
+          <a
+            href="https://www.makpar.com/devsecops-case-study"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="text-indigo-500"
+          >
+            Makpar
+          </a>
+        </p>
       </>
     ),
   },
@@ -116,6 +129,17 @@ const caseStudies = [
           DevSecOps
           ให้กับทีมวิศวกรรมซอฟต์แวร์เพื่อที่จะสามารถส่งมอบซอฟต์แวร์ที่ปลอดภัยได้อย่างรวดเร็วให้กับผู้ใช้
         </p>
+        <p>
+          แหล่งที่มา{' '}
+          <a
+            href="https://www2.deloitte.com/content/dam/Deloitte/uk/Documents/technology/deloitte-uk-tech-trends-2019-chapter7-devsecops.pdf"
+            rel="noopener noreferrer"
+            target="_blank"
+            className="text-indigo-500"
+          >
+            Deloitte
+          </a>
+        </p>
       </>
     ),
   },
@@ -128,7 +152,11 @@ const Case = (props) => {
     return (
       <div className="case-study grid grid-cols-5 gap-5 rounded-lg px-5 py-10 bg-indigo-200 bg-opacity-25">
         <div className="col-span-full md:col-span-2 lg:col-span-1">
-          <img className="w-full max-w-xs mx-auto rounded-lg" src={image} alt={title} />
+          <img
+            className="w-full max-w-xs mx-auto rounded-lg"
+            src={image}
+            alt={title}
+          />
         </div>
         <div className="col-span-full md:col-span-3 lg:col-span-4">
           <h3 className="font-mitr text-xl mb-5">{title}</h3>
