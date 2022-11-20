@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Question = (props) => {
-  const {question} = props;
+  const { question } = props;
   const [answer, setAnswer] = React.useState('');
 
   const handleChange = (event) => {
@@ -37,10 +37,14 @@ const Question = (props) => {
       {!!answer && (
         <div>
           <p>
-            คำตอบที่ถูกต้อง: {question.correctAnswer + 1}.{' '}
+            <span className="font-mitr">คำตอบที่ถูกต้อง : </span>
+            {question.correctAnswer + 1}.{' '}
             {question.choices[question.correctAnswer]}{' '}
           </p>
-          <p>{question.explanation}</p>
+          <p>
+            <span className="font-mitr">อธิบายคำตอบ : </span>
+            {question.explanation}
+          </p>
         </div>
       )}
     </div>
