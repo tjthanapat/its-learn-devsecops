@@ -33,7 +33,7 @@ const Hero = () => {
       </div>
       <div className="overflow-hidden flex justify-center">
         <img
-          src="/assets/devsecops-characters.png"
+          src="assets/devsecops-characters.png"
           alt="DevSecOps Characters"
           className="characters"
         />

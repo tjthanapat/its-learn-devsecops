@@ -49,7 +49,7 @@ const ToggleCase = (props) => {
 const caseStudies = [
   {
     title: 'การนำ DevSecOps มาใช้ของหน่วยงานรัฐบาลกลางสหรัฐอเมริกา',
-    image: '/assets/us-federal.png',
+    image: 'assets/us-federal.png',
     content: (
       <>
         <p>
@@ -105,7 +105,7 @@ const caseStudies = [
   {
     title:
       'การเปลี่ยนจาก DevOps เป็น DevSecOps ของสถาบันโรคภูมิแพ้และโรคติดเชื้อแห่งชาติ สหรัฐอเมริกา',
-    image: '/assets/niaid.png',
+    image: 'assets/niaid.png',
     content: (
       <>
         <p>

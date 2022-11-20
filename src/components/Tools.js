@@ -21,23 +21,23 @@ const ShowTools = () => {
       <div className="mx-auto max-w-screen-lg ">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
           <ToolCard
-            icon="/assets/tool-docker.png"
+            icon="assets/tool-docker.png"
             name="Docker"
             url="https://www.docker.com/"
           />
           <ToolCard
-            icon="/assets/tool-jenkins.png"
+            icon="assets/tool-jenkins.png"
             name="Jenkins"
             url="https://www.jenkins.io/"
           />
 
           <ToolCard
-            icon="/assets/tool-vault.png"
+            icon="assets/tool-vault.png"
             name="Vault"
             url="https://www.vaultproject.io/"
           />
           <ToolCard
-            icon="/assets/tool-aqua.png"
+            icon="assets/tool-aqua.png"
             name="Aqua"
             url="https://www.aquasec.com/"
           />

@@ -32,7 +32,7 @@ const MainIdea = () => {
           <div className="lg:col-span-3 flex flex-col justify-center">
             <img
               className="w-full max-w-xl mx-auto hover:scale-105 transition duration-500 ease"
-              src="/assets/decsecops-cycle.png"
+              src="assets/decsecops-cycle.png"
               alt="DevSecOpsCycle by Dynatrace"
             />
             <h2 className="text-center text-2xl text-indigo-500 mt-10">
