@@ -29,7 +29,7 @@ const CreatorNote = () => {
         onClick={handleClickOpen}
         className="text-indigo-500 hover:text-indigo-600"
       >
-        Creator Note
+        Creators
       </button>
       <Dialog open={open} onClose={handleClose} fullWidth maxWidth="xs">
         <DialogContent>
@@ -43,7 +43,7 @@ const CreatorNote = () => {
               <li>รมิตา ศรีภูธร</li>
               <li>ศิรา อัตตวนิช</li>
             </ul>
-            <div className="mt-6">
+            <div className="mt-6 pb-10">
               <button
                 onClick={handleClose}
                 autoFocus
@@ -200,7 +200,7 @@ const References = () => {
                 </a>
               </li>
             </ul>
-            <div className="mt-6">
+            <div className="mt-6 pb-10">
               <button
                 onClick={handleClose}
                 autoFocus

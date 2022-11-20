@@ -13,7 +13,7 @@ const DevSecOpsQuiz = () => {
     setOpen(false);
   };
   return (
-    <section className="px-10 pb-24">
+    <section className="px-10 pb-8">
       <div className="mx-auto max-w-screen-lg flex justify-center">
           <button
             onClick={handleClickOpen}

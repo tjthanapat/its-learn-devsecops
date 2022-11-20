@@ -19,7 +19,7 @@ const ShowTools = () => {
         ตัวอย่างเครื่องมือ
       </h2>
       <div className="mx-auto max-w-screen-lg ">
-        <div className="grid grid-cols-4 gap-5">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-5">
           <ToolCard
             icon="/assets/tool-docker.png"
             name="Docker"
