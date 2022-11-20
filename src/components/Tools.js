@@ -4,8 +4,8 @@ const ToolCard = (props) => {
   const { name, icon, url } = props;
   return (
     <a href={url} target="_blank" rel="noopener noreferrer">
-      <div className="tool-card bg-indigo-200 bg-opacity-50 rounded-2xl p-5 text-center hover:bg-opacity-100 transition duration-500 ease select-none">
-        <img className="h-20 mx-auto my-5 transition duration-500 ease select-none" src={icon} alt={name} />
+      <div className="tool-card bg-indigo-200 bg-opacity-50 rounded-2xl p-5 text-center hover:bg-opacity-100 transition duration-500 ease">
+        <img className="h-20 mx-auto my-5 transition duration-500 ease" src={icon} alt={name} />
         <p className="font-mitr text-xl text-indigo-500">{name}</p>
       </div>
     </a>

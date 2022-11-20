@@ -10,7 +10,7 @@ const ConceptCard = (props) => {
     <div
       className={
         'lg:grid lg:grid-cols-4 rounded-2xl p-5 ' +
-        'bg-indigo-200 bg-opacity-50 hover:bg-opacity-100 transition duration-500 ease select-none '
+        'bg-indigo-200 bg-opacity-50 hover:bg-opacity-100 transition duration-500 ease '
       }
     >
       <div className="py-5 flex justify-center items-center">
@@ -31,7 +31,7 @@ const MainIdea = () => {
         <div className="grid lg:grid-cols-5 gap-10">
           <div className="lg:col-span-3 flex flex-col justify-center">
             <img
-              className="w-full max-w-xl mx-auto hover:scale-105 transition duration-500 ease select-none"
+              className="w-full max-w-xl mx-auto hover:scale-105 transition duration-500 ease"
               src="/assets/decsecops-cycle.png"
               alt="DevSecOpsCycle by Dynatrace"
             />
