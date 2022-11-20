@@ -24,13 +24,19 @@ const LearningVideo = () => {
           <div className="yt-wrapper ">
             <iframe
               className="rounded-3xl"
-              src="https://www.youtube.com/embed/nrhxNNH5lt0"
-              title="YouTube video player"
+              src="https://www.youtube.com/embed/e-AnCpWRNho"
+              title="Learn DevSecOps - YouTube video player"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             />
           </div>
+          {/* To build for opening app locally, add video in public directory */
+           /* and uncomment below element and comment above element */}
+          {/* <video controls className="rounded-3xl w-full">
+            <source src="Learn DevSecOps.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video> */}
         </div>
       </div>
     </section>
