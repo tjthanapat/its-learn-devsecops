@@ -26,7 +26,7 @@ const Process = () => {
           Security ใน DevSecOps
         </p>
         <p className="mt-2 text-3xl text-indigo-800 text-center mb-7">
-          ประกอบไปด้วย 5 ขั้นตอน
+          ประกอบไปด้วย <span className='whitespace-nowrap'>5 ขั้นตอน</span>
         </p>
       </h2>
       <div className="mx-auto max-w-screen-lg lg:flex lg:justify-center">

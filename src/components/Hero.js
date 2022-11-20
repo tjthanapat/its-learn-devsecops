@@ -3,11 +3,11 @@ import React from 'react';
 const Hero = () => {
   return (
     <header className="hero flex flex-col justify-between min-h-screen w-full bg-indigo-100 bg-gradient-to-b from-indigo-100 via-indigo-100 to-indigo-300">
-      <div className="title px-10 pt-32 pb-10 text-center md:text-left w-full max-w-screen-lg mx-auto">
-        <h1 className="hidden md:block text-8xl font-semibold text-indigo-500">
+      <div className="title px-10 py-10 text-center md:text-left w-full max-w-screen-lg mx-auto">
+        <h1 className="hidden md:block mt-10 lg:mt-20 text-8xl font-semibold text-indigo-500">
           DevSecOps
         </h1>
-        <h1 className="md:hidden text-8xl font-semibold text-indigo-500">
+        <h1 className="mt-10 md:hidden text-6xl font-semibold text-indigo-500">
           DEV
           <br />
           SEC
@@ -15,7 +15,7 @@ const Hero = () => {
           OPS
         </h1>
         <p className="text-xl md:text-2xl mt-5">
-          เรียนรู้เกี่ยวกับ DevSecOps เบื้องต้น
+          เรียนรู้เกี่ยวกับ DevSecOps <span className='whitespace-nowrap'>เบื้องต้น</span>
         </p>
         <div className="mt-10 animate__animated animate__bounce">
           <a

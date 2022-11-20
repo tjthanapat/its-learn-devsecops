@@ -42,7 +42,7 @@ export const quiz = {
     },
     {
       question:
-        'ข้อใดต่อไปนี้ไม่ใช่เครื่องมือในการตรวจสอบหาช่องโหว่ (vulnerability)',
+        'ข้อใดไม่ใช่เครื่องมือในการตรวจสอบหาช่องโหว่ (vulnerability)',
       choices: [
         'Static Application Security Testing (SAST)',
         'Dynamic Application Security Testing (DAST)',
