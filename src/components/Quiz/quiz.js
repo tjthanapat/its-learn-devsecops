@@ -12,7 +12,7 @@ export const quiz = {
       ],
       correctAnswer: 1,
       explanation: `การตรวจสอบโค้ดแบบอัตโนมัติ (code scan) และการตรวจสอบความมั่นคงปลอดภัยหรือช่องโหว่บน environment
-      เป็นแนวคิดของ DevSecOps ที่นำกระบวนการรักษาความมั่นคงปลอดภัยไว้ในไปป์ไลน์การพัฒนาซอฟต์แวร์ `,
+      เป็นแนวคิดของ DevSecOps ที่นำกระบวนการรักษาความมั่นคงปลอดภัยไว้ใน pipeline การพัฒนาซอฟต์แวร์ `,
     },
     {
       question:
@@ -39,6 +39,18 @@ export const quiz = {
       ],
       correctAnswer: 2,
       explanation: 'Monitoring เป็นขั้นตอนที่ 5 ของทำงานของ DevSecOps ที่สังเกตการณ์การทำงานซอฟต์แวร์ที่ส่งมอบไป เนื่องจากอาจจะค้นพบภัยการกำหนดค่าที่ไม่ถูกต้อง (misconfiguration) และปัญหาด้านความมั่นคงปลอดภัยอื่นๆ',
+    },
+    {
+      question:
+        'ข้อใดต่อไปนี้ไม่ใช่เครื่องมือในการตรวจสอบหาช่องโหว่ (vulnerability)',
+      choices: [
+        'Static Application Security Testing (SAST)',
+        'Dynamic Application Security Testing (DAST)',
+        'Software Composition Analysis (SCA)',
+        'Usability Testing',
+      ],
+      correctAnswer: 3,
+      explanation: 'Static Application Security Testing (SAST) Dynamic Application Security Testing (DAST) และ Software Composition Analysis (SCA) เป็นเครื่องมือที่ใช้ในการตรวจสอบหาช่องโหว่ ซึ่งเป็นส่วนหนึ่งของขั้นตอนการค้นหาและทดสอบทางด้านความมั่นคงปลอดภัย (Security Scanning and Testing) ในส่วนของงานความมั่นคงปลอดภัยใน DevSecOps',
     },
   ],
 };
